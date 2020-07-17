@@ -1,0 +1,12 @@
+#teamimage{
+    background-image: url("../media/pizzaspaziale.jpg");
+}
+
+#speed{
+    background-image: url(../media/mostwanted_bg.jpg);
+    background-size: cover;
+}
+
+#vicenza{
+    background-image: url("../media/vicenza_bg.jpg");
+}

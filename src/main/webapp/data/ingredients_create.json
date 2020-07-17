@@ -1,0 +1,188 @@
+[
+    {
+        "icon": "flaticon-tomato",
+        "category": "basic",
+        "ingredient": "tomato sauce",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-fish",
+        "category": "classy",
+        "ingredient": "tuna",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-food",
+        "category": "basic",
+        "ingredient": "mozzarella",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-salad",
+        "category": "basic",
+        "ingredient": "spinaches",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-fruit",
+        "category": "vegan",
+        "ingredient": "pineapple",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-meat",
+        "category": "spicy",
+        "ingredient": "speck",
+        "additional_cost": "1.5"
+    },
+    {
+        "icon": "flaticon-potato",
+        "category": "classy",
+        "ingredient": "roasted potatoes",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-egg",
+        "category": "classy",
+        "ingredient": "egg",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-pepper",
+        "category": "spicy",
+        "ingredient": "chili",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-seeds",
+        "category": "basic",
+        "ingredient": "basil",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-food-1",
+        "category": "vegan",
+        "ingredient": "grilled eggplant",
+        "additional_cost": "1.5"
+    },
+    {
+        "icon": "flaticon-french-fries",
+        "category": "spicy",
+        "ingredient": "fries",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-fruit-2",
+        "category": "vegan",
+        "ingredient": "cherry tomatoes",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-garlic",
+        "category": "basic",
+        "ingredient": "garlic",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-milk",
+        "category": "classy",
+        "ingredient": "brie",
+        "additional_cost": "2"
+    },
+    {
+        "icon": "flaticon-shrimp",
+        "category": "classy",
+        "ingredient": "shrimps",
+        "additional_cost": "2"
+    },
+    {
+        "icon": "flaticon-corn",
+        "category": "vegan",
+        "ingredient": "corn",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-beans",
+        "category": "vegan",
+        "ingredient": "beans",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-salami",
+        "category": "spicy",
+        "ingredient": "pepperoni",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-pumpkin",
+        "category": "vegan",
+        "ingredient": "pumpkin cream",
+        "additional_cost": "1.5"
+    },
+    {
+        "icon": "flaticon-onion",
+        "category": "basic",
+        "ingredient": "onion",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-bacon",
+        "category": "spicy",
+        "ingredient": "bacon",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-oil",
+        "category": "classy",
+        "ingredient": "black olives",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-pepper-1",
+        "category": "spicy",
+        "ingredient": "grilled pepper",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-mushroom",
+        "category": "vegan",
+        "ingredient": "mushrooms",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-radish",
+        "category": "vegan",
+        "ingredient": "radish",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-oil-1",
+        "category": "basic",
+        "ingredient": "olive oil",
+        "additional_cost": "0.5"
+    },
+    {
+        "icon": "flaticon-octopus",
+        "category": "classy",
+        "ingredient": "seafood",
+        "additional_cost": "2.5"
+    },
+    {
+        "icon": "flaticon-mushroom-1",
+        "category": "spicy",
+        "ingredient": "chiodini mushrooms",
+        "additional_cost": "1"
+    },
+    {
+        "icon": "flaticon-ham",
+        "category": "basic",
+        "ingredient": "ham",
+        "additional_cost": "1.5"
+    },
+    {
+        "icon": "flaticon-vegan",
+        "category": "classy",
+        "ingredient": "pistachio granola",
+        "additional_cost": "2"
+    }
+]

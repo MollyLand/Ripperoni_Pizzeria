@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+  <title>Ripperoni Pizza</title>
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+
+  	<!-- ****** favicon faviconit.com ****** -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="media/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="media/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="media/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="media/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="media/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="media/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="media/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="media/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="media/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="media/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="media/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="media/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+	<!-- ****** favicon faviconit.com ****** -->
+
+</head>
+
+<body>
+
+<!-- Modal -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-body ftco-animate">
+              <div role="tabpanel">
+                  <h1 class="text-center">Ripperoni Pizzeria!</h1>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#uploadTab" aria-controls="uploadTab" role="tab" data-toggle="tab">Log In</a>
+
+                      </li> &nbsp; | &nbsp;
+                      <li role="presentation"><a href="#browseTab" aria-controls="browseTab" role="tab" data-toggle="tab">Sign Up</a>
+
+                      </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="uploadTab">
+                        <form method="POST" action="./checkUser">
+                          <br>
+                              <div class="form-group">
+                                  <label for="inputEmail">Email address or Username</label>
+                                  <input type="text" name="id" class="form-control" id="inputEmail">
+                                  <small class="form-text text-muted"></small>
+                                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputPassword">Password</label>
+                                  <input type="password" name="password" class="form-control" id="inputPassword">
+                                  <small class="form-text text-muted"></small>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary save">Go!</button>
+                              </div>
+                              </form>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="browseTab">
+                          <br>
+                          <form method="POST" action="./newuser" class="needs-validation" novalidate>
+                          <div class="form-group">
+                              <label for="newInputFirst">First Name</label>
+                              <input type="text" name="first" class="form-control" id="newInputFirst" aria-describedby="emailHelp">
+                              <small class="form-text text-muted"></small>
+                          </div>
+                          <div class="form-group">
+                              <label for="newInputLast">Last Name</label>
+                              <input type="text" name="last" class="form-control" id="newInputLast">
+                              <small class="form-text text-muted"></small>
+                          </div>
+                          <div class="form-group">
+                              <label for="newInputUsername">Username</label>
+                              <input type="email" name="username" class="form-control" id="newInputUsername" aria-describedby="emailHelp">
+                              <small class="form-text text-muted"></small>
+                          </div>
+                          <div class="form-group">
+                              <label for="newInputEmail">Email</label>
+                              <input type="email" name="email" class="form-control" id="newInputEmail">
+                              <small class="form-text text-muted"></small>
+                              <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                              <label for="newInputPhoneNumber">Phone Number</label>
+                              <input type="text" name="phone" class="form-control" id="newInputPhoneNumber" aria-describedby="emailHelp">
+                              <small class="form-text text-muted"></small>
+                          </div>
+                          <div class="form-group">
+                            <label for="newInputAddress">Address</label>
+                            <input type="text" name="address" class="form-control" id="newInputAddress" aria-describedby="emailHelp">
+                            <small class="form-text text-muted"></small>
+                        </div>
+                          <div class="form-group">
+                              <label for="newInputPassword">Password</label>
+                              <input type="password" name="password" class="form-control" id="newInputPassword">
+                              <small class="form-text text-muted"></small>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary save">Go!</button>
+                          </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!--navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span><img src="media/logoNew.png" height="40px"
+            width="40px"></span>Pizza<br><small>Ripperoni</small></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#servicesSection" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#pizzaofthemonth" class="nav-link">Pizzas of the Month</a></li>
+          <li class="nav-item"><a href="#contactSection" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" data-toggle="modal" data-target="#loginModal" class="nav-link">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start of SlideShow by Owl-Carousel Framework https://owlcarousel2.github.io/OwlCarousel2/-->
+  <section class="home-slider owl-carousel img" style="background-image: url(media/sharingpizza.jpg);">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-6 col-sm-12 ftco-animate">
+            <span class="subheading">RIP</span>
+            <h1 class="mb-4">Italian Pizza with memes!</h1>
+            <p class="mb-4 mb-md-5">Choose the ingredients for the best pizza ever, you will win a coupon on your next order!   </p>
+            <p>
+              <a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">Order Now</a>
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">View Menu</a>
+            </p>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <img src="media/pizza1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Defining each element of the slider-->
+    <div class="slider-item" style="background-image: url(media/location.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-7 col-sm-12 text-center ftco-animate">
+            <span class="subheading">Welcome</span>
+            <h1 class="mb-4">We cooked your desired Pizza Recipe</h1>
+            <p class="mb-4 mb-md-5">Enjoy the fully automated order system.
+              Don't fight anymore with your friends for who has to call the pizzeria! </p>
+            <p>
+              <a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">Order Now</a>
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">View Menu</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item" style="background-image: url(media/pizzeria-moncel.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-6 col-sm-12 text-center ftco-animate">
+            <span class="subheading">Crunchy</span>
+            <h1 class="mb-4">Italian Pizza</h1>
+            <p class="mb-4 mb-md-5">The best quality ingredients for the italian tradition.
+              Enjoy our traditional pizzas or compose your own!</p>
+            <p>
+              <a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">Order Now</a>
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3" data-toggle="modal" data-target="#loginModal">View Menu</a>
+            </p>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <img src="media/pizza1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- End of Slideshow by owl carousel! Thank you!-->
+
+  <!-- Start of section about commercial info -->
+  <!-- Address, phone and working time-->
+  <section class="ftco-intro">
+    <div class="container-wrap">
+      <div class="wrap d-md-flex">
+        <div class="info">
+          <div class="row no-gutters">
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="icon"><span class="icon-phone"></span></div>
+              <div class="text">
+                <h3>(+39) 0444 - 473829 - 83847</h3>
+                <p>Don't worry, you can order online.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="icon"><span class="icon-my_location"></span></div>
+              <div class="text">
+                <h3>Via dei Nicolas Cage in a Cage, 69</h3>
+                <p>Orgiano (VI) 36043</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="icon"><span class="icon-clock-o"></span></div>
+              <div class="text">
+                <h3>Closed when the owner wants.</h3>
+                <p>24h/24h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Icons-->
+        <div class="social d-md-flex pl-md-5 p-4 align-items-center">
+          <ul class="social-icon">
+            <li class="ftco-animate"><a href="https://www.twitter.com" target="_blank"><span
+                  class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.facebook.com" target="_blank"><span
+                  class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instragram.com" target="_blank"><span
+                  class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start of description with a photo of the pizzeria!-->
+  <section class="ftco-about d-md-flex">
+    <div class="one-half img" style="background-image: url(media/location.jpg);"></div>
+    <div class="one-half ftco-animate">
+      <div class="heading-section ftco-animate ">
+        <h2 class="mb-4">Welcome to <span><img src="media/logoNew.png" height="40px" width="40px">Ripperoni Pizza</span>,
+          the most advanced pizzeria so far</h2>
+      </div>
+      <div>
+        <p>From the experience of a traditional italian pizza to the crazier tastes, Ripperoni Pizza will deliver you both
+          and in record time! You just need to login and look at our premium quality ingredients. If your pizza become popular
+          you will win a coupon on your next order.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Here we can specify our services!-->
+  <section id="servicesSection" class="ftco-section ftco-services">
+    <div class="overlay"></div>
+
+    <div class="container">
+
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Our Services</h2>
+          <p>You demand the best service, we will deliver it.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5">
+              <span class="flaticon-diet"></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Healthy Foods</h3>
+              <p>We carefully choose the best quality for our ingredients, following the italian tradition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5">
+              <span class="flaticon-bicycle"></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Fastest Delivery</h3>
+              <p>A team of engineers designed the best workflow so you can enjoy your pizza in a record time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5"><span
+                class="flaticon-pizza-1"></span></div>
+            <div class="media-body">
+              <h3 class="heading">Original & <span>YOUR</span> Recipes</h3>
+              <p>Choose from our traditional catalogue, or create your own recipe.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-medal"></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Completely ON-LINE</h3>
+              <p>Enjoy the fully automated order system.
+                Don't fight anymore with your friends for who has to call the pizzeria!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-chef"></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Experienced Pizzaioli</h3>
+              <p>A team of experienced pizzaioli will bake your pizza like an artpiece</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-laugh"></span>
+            </div>
+            <div class="media-body">
+              <h3 class="heading">Social Pizza</h3>
+              <p>Create your recipes and compete with other users! If your pizza is popular you will win a coupon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pizza of the Month Award!-->
+  <section id="pizzaofthemonth" class="text-center ftco-animate">
+    <div class="container-fluid">
+      <div class="heading-section ftco-animate">
+        <!-- Heading section with a paragraph-->
+        <br><br>
+        <h2 class="mb-4">Pizzas of the Month</h2>
+        <p>Here we can see which pizza had been awarded as best pizzas of <span>APRIL</span></p>
+      </div>
+      <!-- need to retrieve these from the back end-->
+      <!-- Here we can add more row with the same syntax! col-md-6 in order to have 2 pizza per row. Otherwise col-md-4 for 3 pizzas. Sum of all col-md-x must be 12 (columns)-->
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <div class="menu-wrap">
+            <a href="#" class="menu-img img mb-4 ftco-animate" style="background-image: url(media/pizza1.png);"></a>
+            <div class="text">
+              <h3><a href="#">Envy</a></h3>
+              <p>Tomato sauce, Mozzarella, Pepperoni</p>
+              <p class="price"><span>€5.50</span></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="menu-wrap">
+            <a href="#" class="menu-img img mb-4 ftco-animate" style="background-image: url(media/pizza2.png);"></a>
+            <div class="text">
+              <h3><a href="#">Gluttuny</a></h3>
+              <p>Tomato sauce, Mozzarella, Ham, Mushrooms</p>
+              <p class="price"><span>€5.90</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Contact Us-->
+  <section id="contactSection" class="ftco-appointment">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-md-6 col-sm-12 ftco-animate appointment">
+          <h3 class="align-items-center text-center">Contact Us</h3>
+          <form action="#" class="appointment-form">
+            <div class="d-md-flex">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+            </div>
+            <div class="d-me-flex">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send" class="btn btn-primary py-3 px-4">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer of the page -->
+  <footer class="ftco-footer ftco-section img">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About Us</h2>
+            <p>A team of engineers with years of experience in the pizza delivery field designed Ripperoni Pizza and its services.
+              We do not use any kind of marsupial meat in our recipes.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="https://www.twitter.com" target="_blank"><span
+                    class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com" target="_blank"><span
+                    class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Via dei Nicolas Cage in a Cage, 69 ,
+                    Orgiano (VI) 36043, ITALY</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+39) 0444 - 473829 -
+                      83847</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">staff@pizzeriarip.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear().toString());</script> All rights reserved | Thanks to ColorLib by
+            RipperoniStaff
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie bar -->
+  <div id="cb" class="cookie-bar">
+    <span> We don't use &#x1F36A to track your experience. We prefer pizzas to cookies</span>
+    <button type="button" class="close-cb">x</button>
+  </div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/cookiebar.js"></script>
+
+</body>
+
+</html>

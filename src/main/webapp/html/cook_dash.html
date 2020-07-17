@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
+
+  <!-- particular css for employee dashboard-->
+  <link rel="stylesheet" href="../css/employee-dash.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+  <title>Ripperoni Cook</title>
+
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+
+  <!-- link fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/ionicons.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+
+        	<!-- ****** favicon ******-->
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="../media/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="../media/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="../media/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="../media/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="../media/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="../media/favicon/browserconfig.xml">
+  <!-- ****** favicon ****** -->
+
+</head>
+
+<body>
+  <!--same navbar as the other dashboards -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><span><img src="../media/logoNew.png" height="40px"
+              width="40px"></span>Pizza<br><small>Ripperoni</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="#" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="order.html" class="nav-link">Order Now</a></li>
+            <li class="nav-item"><a href="createPizza.html" class="nav-link">Create Pizza</a></li>
+            <li class="nav-item active dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-user"></span> <span id="userAccount"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu ftco-animate text-center">
+              <li><a class="dropdown-item" href="editProfile.html">Edit Profile</a></li>
+              <li><a class="dropdown-item" id="logout">Log Out</a></li>
+            </ul></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <section id="cook-title">
+    <div class="container-fluid ftco-animate">
+      <div class="row">
+          <div class="col-sm-11 ftco-animate">
+              <h1 class="mt-4 mb-4" id="FirstLast"></h1>
+              <p class="breadcrumbs"><span class="mr-2"><a href="../index.html">Home</a></span>| <span>Cook Dashboard</span></p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="cook-tables">
+      <div class="mt-4 container-fluid ftco-animate">
+        <div class="row">
+          <div class="col-sm-9 text-center">
+            <h2>Pending <span>Pizzas</span></h2>
+            <div class="table-responsive">
+              <table id="incoming-pizza-table" class="table table-dark table-striped" style="background: transparent;">
+                <thead>
+                  <tr>
+                    <th scope="col">Id Order</th>
+                    <th scope="col">Pizza Name</th>
+                    <th scope="col">Ingredients</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <!-- here we put a number of pizzas that go next in the oven
+                      The rows of this table is the value of OVEN CAPACITY!
+                -->
+                <!-- the pizzas here need to be provided by the back end, according to
+                      the orders placed in that moment-->
+                      <tbody>
+                      </tbody>
+              </table>
+            </div>
+            <!-- end table -->
+          </div>
+
+          <!-- two cards on the right with useful information about workflow-->
+          <div class="col-sm-3" >
+            <!--
+            <div class="row-sm-3">
+              <div class="container-fluid">
+                <div class="card bg-light">
+                  <div class="card-title text-center">Oven Ready in:</div>
+                  <div class="display-4 text-center">03:25</div>
+                </div>
+              </div>
+            </div> -->
+            <div class="row-sm-4">
+              <div class="mt-4 container-fluid">
+                <div class="card bg-light">
+                  <div class="card-title text-center">Pizzas in the queue:</div>
+                  <!-- display here the total number of pizzas assigned to this cook at the moment-->
+                  <!-- need to retrieve this info from the database-->
+                  <div class="display-4 text-center" id="pizza-in-queue"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end right column -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container-->
+  </section>
+  <!-- end cook-tables section-->
+
+    <!-- Footer of the page -->
+
+  <footer class="ftco-footer ftco-section img">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About Us</h2>
+            <p>A team of engineers with years of experience in the pizza delivery field designed Ripperoni Pizza and its services. We do not use any kind of marsupial meat in our recipes.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="https://www.twitter.com" target="_blank"><span
+                    class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com" target="_blank"><span
+                    class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Via dei Nicolas Cage in a Cage, 69 ,
+                    Orgiano (VI) 36043, ITALY</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+39) 0444 - 473829 -
+                      83847</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">staff@pizzeriarip.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Thanks to ColorLib by
+            RipperoniStaff
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!--  &lt;!&ndash; Cookie bar &ndash;&gt;-->
+<!--  <div id="cb" class="cookie-bar">-->
+<!--    <span> We don't use &#x1F36A to track your experience. We prefer pizzas to cookies</span>-->
+<!--    <button type="button" class="close-cb">x</button>-->
+<!--  </div>-->
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+  <script src="../js/aos.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <script src="../js/jquery.stellar.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/jquery.animateNumber.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+  <script src="../js/jquery.timepicker.min.js"></script>
+  <script src="../js/scrollax.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/DashBoardCook.js"></script>
+  <script src="../js/cookiebar.js"></script>
+
+</body>

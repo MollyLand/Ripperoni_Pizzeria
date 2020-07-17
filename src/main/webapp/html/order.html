@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Donald Shenaj">
+
+  <title>Order pizza</title>
+
+  <!-- icon user CSS -->
+  <link rel="stylesheet" href="../css/icomoon.css">
+
+  <!-- standard css used in all pages -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="../css/order.css">
+
+  <!-- Open Iconic css-->
+  <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+
+  <!-- link to the fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+   <!-- link to the css animation, navbar dropdon -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- ****** favicon faviconit.com ****** -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="media/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="media/favicon/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="media/favicon/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="media/favicon/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="media/favicon/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="media/favicon/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="media/favicon/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="media/favicon/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="media/favicon/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="media/favicon/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="media/favicon/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="media/favicon/favicon-144.png">
+  <meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+  <!-- ****** favicon faviconit.com ****** -->
+
+</head>
+
+<body>
+
+  <!--same navbar as the other dashboards -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><span><img src="../media/logoNew.png" height="40px"
+        width="40px"></span>Pizza<br><small>Ripperoni</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a id="dashboardType" href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li class="nav-item active"><a href="order.html" class="nav-link">Order Now</a></li>
+          <li class="nav-item"><a href="createPizza.html" class="nav-link">Create Pizza</a></li>
+          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-user"></span> <span id="userAccount"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu ftco-animate text-center">
+              <li><a class="dropdown-item" href="editProfile.html">Edit Profile</a></li>
+              <li><a class="dropdown-item" id="logout">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- close button  -->
+      <span class="close">&times;</span>
+      <div class="table-name">Edit your ingredients</div>
+      <!-- table with ingredients -->
+      <table id="ingredients-catalogue" class="text-center table table-hover table-striped ">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Price &euro;</th>
+          </tr>
+        </thead>
+        <tbody>
+           <!-- Dynamically insertion of the body through json and ajax calls -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- modal for message -->
+  <div id="orderConfirmModal"  class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Order Received</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<!--            <span aria-hidden="true">&times;</span>-->
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Thank you! Your order is now in queue! You will be redirected to the dashboard..</p>
+        </div>
+        <div class="modal-footer">
+<!--          <button id ="modbutt" type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>-->
+          <button id ="modbutt" type="button" class="btn btn-secondary">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- heading section-->
+  <div class="heading-section" id="topimage-order">
+    <div class="container-fluid">
+      <div class="heading-section text-center">
+        <br>
+        <h2 class="mt-2 mb-2">Pizza <span>catalogue</span></h2>
+        <h4>Click on the <span>TABLE</span> to compose your order</h4>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="row container-fluid">
+    <div class="col-md-9">
+      <!-- pizzas catalogue dynamic table -->
+      <input class="form-control mb-12" id="tableSearch" type="text" placeholder="Type something to search an item from the list">
+      <div class="heading-section">
+
+        <table class="header-fixed table table-hover table-dark bg-transparent" id="pizza-catalogue">
+          <thead class="head-catalogue">
+            <tr>
+              <th class="col">Name</th>
+              <th class="col">Ingredients</th>
+              <th class="col">User</th>
+              <th class="col">Score</th>
+              <th class="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamically insertion of the body through json and ajax calls -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end catalogue table-->
+
+    <!-- price and payment section-->
+    <div class="col-md-3">
+      <div class="container-fluid">
+        <br>
+        <br>
+          <label for="coupon"><button class='btn-warning' id="coupon-submit">Submit coupon</button></label>
+          <input id="coupon" placeholder="123456789" pattern="[0-9]{9}">
+          <br>
+          <label id="discount"></label>
+          <br>
+        <button id="send-order" class='btn btn-success'>GO</button>
+        <!-- I removed the spaces before the euro, so it sticks together with the price number-->
+        <div class="cost">Total: <span class="cost" id="total-cost">0</span>&euro;
+          <br>
+          <!-- Set up a div element for buying methods -->
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of table+payment row-->
+
+  <!-- dynamic table for the order-->
+  <div class="table-responsive">
+    <div class="table-name">Your order</div>
+    <table id="pizza-order" class="table table-hover table-dark">
+      <!-- we dont need the header in this table -->
+      <tbody>
+        <!-- the body will be inserted Dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- end order table-->
+
+    <!-- Set the complete jquery lib which includes ajax calls, json..-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+    <!-- <button id="send-order"> </button> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/scrollax.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/order.js"></script>
+    <script src="../js/paypal.js"></script>
+
+    <script src="../js/selectDashboard.js"></script>
+
+</body>
+</html>

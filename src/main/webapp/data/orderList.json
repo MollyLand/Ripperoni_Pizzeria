@@ -1,0 +1,38 @@
+[
+    {
+        "IDOrder": "#34",
+        "Price": 76.00,
+        "Date":"13/04/2020",
+        "Pizzas": 12,
+        "Status": "In Charge"
+    },
+    {
+        "IDOrder": "#14",
+        "Price": 56.00,
+        "Date":"12/04/2020",
+        "Pizzas": 6,
+        "Status": "Baking"
+    },
+    {
+        "IDOrder": "#134",
+        "Price": 30.50,
+        "Date":"11/04/2020",
+        "Pizzas": 3,
+        "Status": "Delivered"
+    },
+    {
+        "IDOrder": "#1244",
+        "Price": 56.50,
+        "Date":"10/04/2020",
+        "Pizzas": 6,
+        "Status": "Delivered"
+    },
+
+    {
+        "IDOrder": "#234",
+        "Price": 96.00,
+        "Date":"19/04/2020",
+        "Pizzas": 6,
+        "Status": "Delivered"
+    }
+]

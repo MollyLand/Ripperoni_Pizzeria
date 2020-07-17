@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Create Pizza</title>
+
+    <!-- ****** favicon faviconit.com ****** -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="media/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="media/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="media/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="media/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="media/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+    <!-- ****** favicon faviconit.com ****** -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/flaticon_create.css">
+
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../css/createpizza.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span><img src="../media/logoNew.png" height="40px" width="40px"></span>Pizza<br><small>Ripperoni</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a id="dashboardType" href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="order.html" class="nav-link">Order Now</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Create Pizza</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-user"></span> <span id="userAccount"></span> <span class="caret"></span></a>
+                        <ul class="dropdown-menu ftco-animate text-center">
+                            <li><a class="dropdown-item" href="editProfile.html">Edit Profile</a></li>
+                            <li><a class="dropdown-item" id="logout">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="create-modal">
+        <div class="modal-dialog">
+            <div class="modal-content ftco-animate">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Choose a NAME for your PIZZA</h4>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="container-fluid">
+                        <input type="text" id="name-pizza-text" placeholder="name">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button id="done-button-pizzaname" class="btn btn-primary">done</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add for new ingredients-->
+    <section class="text-center" id="topimage-create">
+        <div class="container-fluid">
+            <div class="heading-section">
+                <br>
+                <h2 class="mb-2 mt-2"><span>Create</span> your Pizza!</h2>
+                <h4>You better check out the new <span>APRIL</span> ingredients :)</h4>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients tabs-->
+    <section class="text-center">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+            <div class="heading-section col-3">
+                <div class="nav flex-column nav-tabs" id="nav-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" >
+                        <p></p>
+                        <h2><span>basic</span></h2>
+                        <p>Please get out from your comfort zone</p>
+                    </a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <p></p>
+                        <h2><span>vegan</span></h2>
+                        <p>Let's enjoy some photosynthesis</p>
+                    </a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <p></p>
+                        <h2><span>spicy</span></h2>
+                        <p>YOU ARE BRAVE</p>
+                    </a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <p></p>
+                        <h2><span>classy</span></h2>
+                        <p>It's time for another cocktail</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Actual ingredients selection-->
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row" id="basic-ingredients">
+                            <!-- basic  -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="row" id="vegan-ingredients">
+                            <!-- vegan  -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="row" id="spicy-ingredients">
+                            <!-- spicy  -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="row" id="classy-ingredients">
+                            <!-- classy -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Monitoring delle scelte-->
+    <section class="text-center">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <p></p>
+                    <h2>TOTAL</h2>
+                    <h2 id="total-price-ingredients"></h2>
+                </div>
+                <div class="col-7">
+                    <h1><span>Chosen</span> Ingredients:</h1>
+                    <p id="chosen-ingredients"></p>
+                </div>
+                <div class="col-2">
+                    <div class="col-8">
+                        <div class="form-group">
+                            <input type="submit" value="DONE!" id="done-button" class="btn btn-primary py-3 px-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer of the page -->
+    <footer class="ftco-footer ftco-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About Us</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                            blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://www.twitter.com" target="_blank"><span
+                                    class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com" target="_blank"><span
+                                    class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com" target="_blank"><span
+                                    class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-6 mb-md-6">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Via dei Nicolas Cage in a Cage, 69 ,
+                        Orgiano (VI) 36043, ITALY</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+39) 0444 - 473829 -
+                          83847</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                        class="text">staff@pizzeriarip.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Thanks to ColorLib by
+                        RipperoniStaff
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Cookie bar -->
+<!--    <div id="cb" class="cookie-bar">-->
+<!--        <span> We don't use &#x1F36A to track your experience. We prefer pizzas to cookies</span>-->
+<!--        <button type="button" class="close-cb">x</button>-->
+<!--    </div>-->
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+        <!-- javascript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.easing.1.3.js"></script>
+        <script src="../js/jquery.waypoints.min.js"></script>
+        <script src="../js/jquery.stellar.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/aos.js"></script>
+        <script src="../js/jquery.animateNumber.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script src="../js/jquery.timepicker.min.js"></script>
+        <script src="../js/scrollax.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/create-pizza.js"></script>
+        <script src="../js/cookiebar.js"></script>
+
+        <script src="../js/selectDashboard.js"></script>
+
+</body>
+
+</html>

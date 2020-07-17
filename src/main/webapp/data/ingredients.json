@@ -1,0 +1,222 @@
+[
+    {
+        "ingredient": "tomato sauce",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "mozzarella",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "asparagus",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "bresaola",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "brie cheese",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "speck",
+        "additional_cost": "1.5"
+    },
+    {
+        "ingredient": "tuna",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "wurstel",
+        "additional_cost": "0.5"  
+    },
+    {
+        "ingredient": "buffalo mozzarella",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "mushrooms",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "ham",
+        "additional_cost": "1.5"
+    },
+    {
+        "ingredient": "pepperoni",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "black olives",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "smoked provola",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "bacon",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "grilled eggplant",
+        "additional_cost": "1.5"
+    },
+    {
+        "ingredient": "corn",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "raw ham",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "grilled pepper",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "artichoke",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "olives",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "zucchini",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "onion",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "stracchino",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "sausage",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "parmesan",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "rocket salad",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "porcini mushrooms",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "chiodini mushrooms",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "pecorino",
+        "additional_cost": "1.5"
+    },
+    {
+        "ingredient": "ricotta",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "spinaches",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "horse frays",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "beans",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "pork",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "anchovies",
+        "additional_cost": "0.75"
+    },
+    {
+        "ingredient": "capers",
+        "additional_cost": "0.75"
+    },
+    {
+        "ingredient": "emmenthal",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "fontina",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "blue cheese",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "pistachio granola",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "cherry tomatoes",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "basil",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "garlic",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "origano",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "pineapple",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "roasted potatoes",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "egg",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "chili",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "fries",
+        "additional_cost": "1"
+    },
+    {
+        "ingredient": "shrimps",
+        "additional_cost": "2"
+    },
+    {
+        "ingredient": "pumpkin cream",
+        "additional_cost": "1.5"
+    },
+    {
+        "ingredient": "radish",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "olive oil",
+        "additional_cost": "0.5"
+    },
+    {
+        "ingredient": "seafood",
+        "additional_cost": "2.5"
+    }
+]    

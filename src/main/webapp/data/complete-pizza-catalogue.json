@@ -1,0 +1,149 @@
+[
+    {
+        "pizza_name": "Bufala",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,buffalo mozzarella"
+    },
+    {
+        "pizza_name": "Capricciosa",
+        "price": "8.25",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,ham,mushrooms,anchovies,pepperoni"
+    },
+    {
+        "pizza_name": "Diavola",
+        "price": "5.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,pepperoni"
+    },
+    {
+        "pizza_name": "Rest in pizza",
+        "price": "9",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,ham,mushrooms,olives,grilled pepper,pepperoni"
+    },
+    {
+        "pizza_name": "Inglesina",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,raw ham"
+    },
+    {
+        "pizza_name": "Margherita",
+        "price": "4.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella"
+    },
+    {
+        "pizza_name": "Marinara",
+        "price": "5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,garlic,origano"
+    },
+    {
+        "pizza_name": "Napoletana",
+        "price": "6",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,anchovies,capers"
+    },
+    {
+        "pizza_name": "Prosciutto e funghi",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,ham,mushrooms"
+    },
+    {
+        "pizza_name": "Quattro formaggi",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,emmenthal,fontina,blue cheese"
+    },
+    {
+        "pizza_name": "Quattro stagioni",
+        "price": "7.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,ham,mushrooms,artichoke,olives"
+    },
+    {
+        "pizza_name": "Ragusana",
+        "price": "9",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "mozzarella,pistachio granola,pork,parmesan"
+    },
+    {
+        "pizza_name": "Romana",
+        "price": "5.25",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,anchovies"
+    },
+    {
+        "pizza_name": "Rucola e grana",
+        "price": "6",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,rocket salad,parmesan"
+    },
+    {
+        "pizza_name": "Rustica",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,pork"
+    },    
+    {
+        "pizza_name": "Salsiccia",
+        "price": "5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,sausage"
+    },
+    {
+        "pizza_name": "Sfilacci",
+        "price": "6.5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,horse frays"
+    },
+    {
+        "pizza_name": "Tirolese",
+        "price": "6",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,speck"
+    },
+    {
+        "pizza_name": "Tonno e cipolla",
+        "price": "6",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,tuna,onion"
+    },
+    {
+        "pizza_name": "Vegetariana",
+        "price": "9",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,grilled eggplant,grilled pepper,beans,asparagus,spinaches"
+    },
+    {
+        "pizza_name": "Viennese",
+        "price": "5",
+        "username": "Admin",
+        "score": "0",
+        "ingredients": "tomato sauce,mozzarella,wurstel"
+    }
+]

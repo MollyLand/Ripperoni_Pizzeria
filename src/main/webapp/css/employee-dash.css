@@ -1,0 +1,52 @@
+#cook-title{
+    background-image: url(../media/pizza-ingredients.jpg);
+    background-size: cover;
+}
+
+#cook-icon{
+    height: 2em;
+    margin:0 auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+
+}
+
+#deliveryguy-icon{
+    height: 2em;
+    margin:0 auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+#deliveryguy-title{
+    background-image: url(../media/road.jpg);
+    background-size: cover;   
+}
+
+
+.card-title{
+    color: black;
+}
+
+
+.map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+
+.map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+.card-cascade{
+    background-color: #404040;
+}
+

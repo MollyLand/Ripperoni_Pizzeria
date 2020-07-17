@@ -1,0 +1,135 @@
+/* style rules for order table to be scrollable */
+.header-fixed {
+  width: 100% 
+}
+
+.header-fixed > thead,
+.header-fixed > tbody,
+.header-fixed > thead > tr,
+.header-fixed > tbody > tr,
+.header-fixed > thead > tr > th,
+.header-fixed > tbody > tr > td {
+  display: block;
+}
+
+.header-fixed > tbody > tr:after,
+.header-fixed > thead > tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.header-fixed > tbody {
+  overflow-y: auto;
+  height: 300px;
+}
+
+/* show only 5 columns, width parameter = *100% / number_of_columns* */
+.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+  width: 20%;
+  float: left;
+}
+
+#topimage-order > div{
+  background-image: url(../media/catalogpizza.png); 
+  background-size: cover;
+}
+
+#topimage-order > div > div > h2{
+  font-size: 28pt;
+}
+
+.cost, .table-name{
+  text-align: center;
+  color: white;
+  font-size: 180%;
+}
+
+/*little spape between edit and delete button*/
+/*added at the btn class of bootstrap*/
+.btn-space {
+  margin-right: 5px;
+}
+
+.table-space{
+  margin: 20px;
+}
+
+/*fix searchbar placeholder text*/
+::-webkit-input-placeholder {
+  font-size: 14px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 14px!important;
+}
+::-moz-placeholder {
+  font-size: 14px!important;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px!important;
+} 
+
+/* decrease the font sinze of the following class fields of the tables
+(those are td elements inside the pizza-catalogue and pizza order) */
+.ingredients, .user, .score, .pizza-name, .head-catalogue{
+  font-size: small;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  color: white;
+  background-image: url("../media/blackBG.jpg");
+  /*background-color: #202020;*/
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* displaying and hiding the modal by changing the class from javascript */
+.hide-modal{
+  display: none;
+}
+.display-modal{
+  display: block;
+}
+
+#paypal-button-container{
+  position: relative;
+  z-index: 0;
+}

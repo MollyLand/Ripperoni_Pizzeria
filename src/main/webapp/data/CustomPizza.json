@@ -1,0 +1,20 @@
+[
+    {
+        "PizzaName": "Gluttony",
+        "Price": 8.5,
+        "Score": 6,
+        "Ingredients": ["tomato sauce","mozzarella","pepperoni","fries"]
+    },
+    {
+        "PizzaName": "Envy",
+        "Price": 7,
+        "Score": 1,
+        "Ingredients": ["tomato sauce","mozzarella","tuna","onion","pepperoni"]
+    },
+    {
+        "PizzaName": "Wrath",
+        "Price": 12,
+        "Score": 70,
+        "Ingredients": ["tomato sauce","mozzarella","beans","blue cheese","fries","ham"]
+    }
+]
