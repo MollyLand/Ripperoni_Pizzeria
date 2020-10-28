@@ -6,7 +6,7 @@ It consists of a web application regarding a takeaway pizzeria, where employees 
 Therefore, Maven is used for the application developing and Apache Tomcat as web server and container.
 
 ## Members
-* Favaro Simone
+* [Favaro Simone](https://github.com/suerioh)
 * Foscarin Daniele
 * [Molon Alberto](https://github.com/MollyLand)
 * Neri Michael
