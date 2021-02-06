@@ -8,7 +8,7 @@ Therefore, Maven is used for the application developing and Apache Tomcat as web
 ## Members
 * [Favaro Simone](https://github.com/suerioh)
 * [Foscarin Daniele](https://github.com/DanieleFoscarin)
-* [Molon Alberto](https://github.com/MollyLand)
+* [Molon Alberto](https://github.com/albertomolon)
 * Neri Michael
 * [Shenaj Donald](https://github.com/donaldssh)
 
